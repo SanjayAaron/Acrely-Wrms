@@ -111,8 +111,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="flex items-center gap-2.5 cursor-pointer"
           onClick={() => onNavigate && onNavigate('dashboard')}
         >
-          <div className="w-10 h-10 flex items-center justify-center rounded-[10px] overflow-hidden">
-            <img src={logoIcon} alt="Acrely OS Logo" className="w-full h-full object-contain" />
+          <div className="w-14 h-14 flex items-center justify-center rounded-[10px] overflow-hidden">
+            <img src={logoIcon} alt="Acrely OS Logo" className="w-full h-full object-contain scale-125" />
           </div>
           <div>
             <div className="flex items-center gap-2">

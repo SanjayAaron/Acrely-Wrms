@@ -181,8 +181,8 @@ export const LoginView: React.FC<LoginViewProps> = ({ onSignIn, onAuditLog }) =>
 
           {/* Acrely OS Header */}
           <div className="text-center space-y-2 mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-3 overflow-hidden">
-              <img src={logoIcon} alt="Acrely OS Logo" className="w-full h-full object-contain" />
+            <div className="inline-flex items-center justify-center w-32 h-32 rounded-2xl mb-3 overflow-hidden">
+              <img src={logoIcon} alt="Acrely OS Logo" className="w-full h-full object-contain scale-125" />
             </div>
 
             <h1 className="text-3xl font-extrabold tracking-tight text-[#111827] dark:text-[#F8FAFC]">
