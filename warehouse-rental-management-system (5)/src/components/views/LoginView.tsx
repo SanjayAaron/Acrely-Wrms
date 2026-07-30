@@ -4,6 +4,7 @@ import { useTheme } from '../../context/ThemeContext';
 import { securityEngine, SecurityAlert, SecurityAuditPayload } from '../../utils/securityManager';
 import { SecurityAlertModal } from '../modals/SecurityAlertModal';
 import { useExperience } from '../../context/ExperienceContext';
+import logoIcon from '../../assets/bg eraser wrms.png';
 
 interface LoginViewProps {
   onSignIn: () => void;
@@ -180,8 +181,8 @@ export const LoginView: React.FC<LoginViewProps> = ({ onSignIn, onAuditLog }) =>
 
           {/* Acrely OS Header */}
           <div className="text-center space-y-2 mb-8">
-            <div className="inline-flex items-center justify-center w-14 h-14 bg-[#2563EB] text-white rounded-2xl shadow-md mb-3 ring-4 ring-blue-50 dark:ring-blue-950">
-              <Building2 className="w-7 h-7 stroke-[2.2]" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-3 overflow-hidden">
+              <img src={logoIcon} alt="Acrely OS Logo" className="w-full h-full object-contain" />
             </div>
 
             <h1 className="text-3xl font-extrabold tracking-tight text-[#111827] dark:text-[#F8FAFC]">

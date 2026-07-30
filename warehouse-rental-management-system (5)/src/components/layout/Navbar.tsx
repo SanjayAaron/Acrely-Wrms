@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  Warehouse as WarehouseIcon,
   Search,
   Plus,
   Bell,
@@ -19,6 +18,7 @@ import { NavigationTab, UserRole } from '../../types';
 import { AppNotification } from '../../types/notifications';
 import { NotificationCenter } from '../notifications/NotificationCenter';
 import { useTheme } from '../../context/ThemeContext';
+import logoIcon from '../../assets/bg eraser wrms.png';
 
 interface NavbarProps {
   onToggleMobileSidebar: () => void;
@@ -111,8 +111,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="flex items-center gap-2.5 cursor-pointer"
           onClick={() => onNavigate && onNavigate('dashboard')}
         >
-          <div className="w-9 h-9 bg-[#2563EB] rounded-[10px] flex items-center justify-center text-white font-bold shadow-xs">
-            <WarehouseIcon className="w-5 h-5" />
+          <div className="w-10 h-10 flex items-center justify-center rounded-[10px] overflow-hidden">
+            <img src={logoIcon} alt="Acrely OS Logo" className="w-full h-full object-contain" />
           </div>
           <div>
             <div className="flex items-center gap-2">
