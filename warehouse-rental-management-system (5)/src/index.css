@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Global Theme Variables */
+:root {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-sidebar: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-elevated: #F8FAFC;
+  --bg-input: #FFFFFF;
+  --border-color: #E5E7EB;
+  --text-primary: #111827;
+  --text-secondary: #4B5563;
+  --text-muted: #6B7280;
+  --text-placeholder: #9CA3AF;
+}
+
+.dark {
+  --bg-primary: #0F172A;
+  --bg-secondary: #111827;
+  --bg-sidebar: #020617;
+  --bg-card: #1E293B;
+  --bg-card-elevated: #273549;
+  --bg-input: #1E293B;
+  --border-color: #334155;
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-placeholder: #64748B;
+}
+
+/* Smooth theme transition */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out, color 150ms ease-in-out, fill 150ms ease-in-out, stroke 150ms ease-in-out !important;
+}
+
+html, body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+/* Dark Mode Overrides for Default Container & Surface Classes */
+.dark body {
+  background-color: #0F172A !important;
+  color: #F8FAFC !important;
+}
+
+/* Scrollbar Styling for Dark Mode */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Dark Mode Input Autofill fix */
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #F8FAFC !important;
+  -webkit-box-shadow: 0 0 0px 1000px #1E293B inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media print {
+  /* Hide navigation, sidebar, header, buttons, and non-printable items */
+  aside,
+  header,
+  nav,
+  .print\:hidden,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Force print output to always remain crisp light mode for readability & ink saving */
+  body, html, main, div, section, article {
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+  }
+
+  /* Ensure the printable report container takes full width */
+  #reports-printable-root {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Ensure page breaks inside charts or cards are avoided where possible */
+  .card, div {
+    page-break-inside: avoid;
+  }
+}
