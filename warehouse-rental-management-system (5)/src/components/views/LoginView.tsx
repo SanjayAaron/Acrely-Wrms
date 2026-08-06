@@ -179,14 +179,14 @@ export const LoginView: React.FC<LoginViewProps> = ({ onSignIn, onAuditLog }) =>
       <main className="w-full max-w-md my-auto">
         <div className="bg-white dark:bg-[#1E293B] border border-[#E5E7EB] dark:border-[#334155] rounded-2xl shadow-2xl p-8 sm:p-10 transition-all duration-300">
 
-          {/* Acrely OS Header */}
+          {/* Acrely WRMS Header */}
           <div className="text-center space-y-2 mb-8">
             <div className="inline-flex items-center justify-center w-32 h-32 rounded-2xl mb-3 overflow-hidden">
-              <img src={logoIcon} alt="Acrely OS Logo" className="w-full h-full object-contain scale-125" />
+              <img src={logoIcon} alt="Acrely WRMS Logo" className="w-full h-full object-contain scale-125" />
             </div>
 
             <h1 className="text-3xl font-extrabold tracking-tight text-[#111827] dark:text-[#F8FAFC]">
-              Acrely OS
+              Acrely WRMS
             </h1>
 
             <p className="text-xs text-gray-500 dark:text-[#94A3B8] font-medium">
@@ -357,10 +357,10 @@ export const LoginView: React.FC<LoginViewProps> = ({ onSignIn, onAuditLog }) =>
       {/* Footer copyright */}
       <footer className="w-full max-w-2xl text-center py-4 px-4 text-[11px] text-gray-500 dark:text-[#64748B] font-medium space-y-1">
         <p className="font-bold text-gray-700 dark:text-[#CBD5E1]">
-          © {new Date().getFullYear()} Acrely OS. All Rights Reserved.
+          © {new Date().getFullYear()} Acrely Real Estate. All Rights Reserved.
         </p>
         <p className="text-[10px] leading-relaxed text-gray-400 dark:text-[#64748B]">
-          Acrely OS and its applications, including Acrely WRMS, Acrely PMS and related services, are proprietary software developed by Acrely. All trademarks, product names, logos, designs and source code are protected by applicable intellectual property laws. Unauthorized use, reproduction or distribution is strictly prohibited.
+          Acrely Real Estate and its applications, including Acrely WRMS, Acrely PMS and related services, are proprietary software developed by Acrely. All trademarks, product names, logos, designs and source code are protected by applicable intellectual property laws. Unauthorized use, reproduction or distribution is strictly prohibited.
         </p>
       </footer>
 

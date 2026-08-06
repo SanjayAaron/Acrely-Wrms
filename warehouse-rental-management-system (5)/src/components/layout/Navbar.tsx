@@ -112,12 +112,12 @@ export const Navbar: React.FC<NavbarProps> = ({
           onClick={() => onNavigate && onNavigate('dashboard')}
         >
           <div className="w-14 h-14 flex items-center justify-center rounded-[10px] overflow-hidden">
-            <img src={logoIcon} alt="Acrely OS Logo" className="w-full h-full object-contain scale-125" />
+            <img src={logoIcon} alt="Acrely WRMS Logo" className="w-full h-full object-contain scale-125" />
           </div>
           <div>
             <div className="flex items-center gap-2">
               <span className="font-extrabold text-sm tracking-tight text-[#111827] dark:text-[#F8FAFC]">
-                Acrely OS
+                Acrely WRMS
               </span>
               <span className="text-[10px] uppercase font-semibold px-1.5 py-0.5 bg-blue-50 dark:bg-blue-950/60 text-[#2563EB] dark:text-blue-400 border border-blue-200 dark:border-blue-800/60 rounded">
                 Owner Portal

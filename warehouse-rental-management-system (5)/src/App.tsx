@@ -911,10 +911,10 @@ export default function App() {
           {/* App-wide Footer */}
           <footer className="mt-12 pt-6 border-t border-[#E5E7EB] dark:border-[#334155] text-center text-[11px] text-gray-500 dark:text-[#64748B] font-medium space-y-1 pb-6">
             <p className="font-bold text-gray-700 dark:text-[#CBD5E1]">
-              © {new Date().getFullYear()} Acrely OS. All Rights Reserved.
+              © {new Date().getFullYear()} Acrely Real Estate. All Rights Reserved.
             </p>
             <p className="max-w-3xl mx-auto text-[10px] leading-relaxed text-gray-400 dark:text-[#64748B]">
-              Acrely OS and its applications, including Acrely WRMS, Acrely PMS and related services, are proprietary software developed by Acrely. All trademarks, product names, logos, designs and source code are protected by applicable intellectual property laws. Unauthorized use, reproduction or distribution is strictly prohibited.
+              Acrely Real Estate and its applications, including Acrely WRMS, Acrely PMS and related services, are proprietary software developed by Acrely. All trademarks, product names, logos, designs and source code are protected by applicable intellectual property laws. Unauthorized use, reproduction or distribution is strictly prohibited.
             </p>
           </footer>
         </main>
